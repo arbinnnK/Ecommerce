@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    
+   
+
+    
+    <div class="col-md-9">
+      <section class="row" id="latest">
+        <div class="col-12">
+          <h2 class="text-center m-5">Latest Products</h2>
+        </div>
+
+        {% for p in products %}
+        <div class="col-lg-3" class="col-md-4">
+          <div class="card">
+            <img src="/media/{{ p.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ p.name }}</h5>
+              <p class="card-text">Nrs. {{ p.price }}</p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-cart"></i>
+              </a>
+              <a href="#" class="btn btn-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="col-lg-3" class="col-md-4">
+          <div class="card">
+            <img src="{% static 'C:\Users\dell\OneDrive\Desktop\Django\static\images\camera1.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-cart"></i>
+              </a>
+              <a href="#" class="btn btn-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3" class="col-md-4">
+          <div class="card">
+            <img src="{% static 'C:\Users\dell\OneDrive\Desktop\Django\static\images\camera.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-cart"></i>
+              </a>
+              <a href="#" class="btn btn-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3" class="col-md-4">
+          <div class="card">
+            <img src="{% static 'C:\Users\dell\OneDrive\Desktop\Django\static\images\camera.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-cart"></i>
+              </a>
+              <a href="#" class="btn btn-danger">
+                <i class="bi bi-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+{% endblock %}
+      
+  
+
+
+

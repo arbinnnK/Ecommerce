@@ -1,0 +1,22 @@
+#logo{
+    height: 50px;
+    width: 150px;
+}
+
+#slider .carousel-item img{
+    height: 600px;
+}
+
+#slider .carousel-caption
+{
+    background-color: rgba(36, 155 , 246, 0.7);
+}
+
+#latest .card img{
+    height: 250px;
+}
+
+#footer{
+    color: bisque;
+    background-color: burlywood;
+}
